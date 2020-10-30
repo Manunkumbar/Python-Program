@@ -1,0 +1,38 @@
+def fun1(string1,target):
+    words=string1.split(" ") 
+    solution=[]
+    for i in range(len(words)):
+        if words[i]==target: 
+            solution.append(i)
+    if len(solution)==0: 
+        return False
+    return solution
+
+string="we dont need no education we dont need no thought control no we dont"
+s1 = string.split()
+s=[]
+for i in range(len(s1)):
+    a=fun1(string,s1[i])
+    s.append(a)
+    
+final_list1 = [] 
+for num in s1: 
+    if num not in final_list1: 
+        final_list1.append(num) 
+    
+final_list2 = [] 
+for num in s: 
+    if num not in final_list2: 
+        final_list2.append(num) 
+ 
+
+res = {} 
+for key in final_list1: 
+    for value in final_list2: 
+        res[key] = value 
+        final_list2.remove(value) 
+        break 
+    
+
+for key, value in res.items():
+    print(key, ' : ', value)
