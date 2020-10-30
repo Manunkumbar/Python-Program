@@ -1,0 +1,14 @@
+def fun1(string1,target):
+    words=string1.split(" ") 
+    solution=[]
+    for i in range(len(words)):
+        if words[i]==target: 
+            solution.append(i)
+    if len(solution)==0: 
+        return False
+    return solution
+
+string=str(input("Enter a string "))
+substr=str(input("Enter a word "))
+a=fun1(string,substr)
+print(a)
