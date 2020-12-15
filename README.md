@@ -1,5 +1,5 @@
 # Python-Program
-(a)Write a procedure that takes a string of words separated by spaces (assume no punctuation or capitaliza-tion), together with a "target" word, and shows the position of the target word in the string of words.
+(a)procedure that takes a string of words separated by spaces (assume no punctuation or capitaliza-tion), together with a "target" word, and shows the position of the target word in the string of words.
  For example, if the string is:
 
 we dont need no education we dont need no thought control no we dont
